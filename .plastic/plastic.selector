@@ -1,0 +1,4 @@
+repository "GotlandCulture_v2@wyfaxyj@cloud.cn"
+  path "/"
+    br "/main"
+    co "/main"

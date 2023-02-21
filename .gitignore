@@ -1,0 +1,41 @@
+# Unity generated files
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Ll]ibrary/
+Assets/AssetStoreTools*
+
+# Visual Studio files
+.vs/
+.vscode/
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.pdb
+*.csproj
+*.unityproj
+*.booproj
+*.sln.docstates
+
+# MonoDevelop files
+*.pidb
+*.userprefs
+*.usertasks
+
+# Other files
+.DS_Store
+Thumbs.db
+*.log
+*.bak
+*.dll
+*.pdb
+*.meta
+*.generated.*
+*.apk
+*.obb
+*.unitypackage
+*.DS_Store
+*.tmp
+*.zip
