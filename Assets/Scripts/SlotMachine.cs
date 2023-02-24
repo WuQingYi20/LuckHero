@@ -41,11 +41,7 @@ public class SlotMachine : MonoBehaviour
     List<Symbol> symbolsListInHand = new List<Symbol>();
     List<Symbol> symbolsListPlayerTotal = new List<Symbol>();
 
-    //玩家在spin之后，手牌应该恢复。他们什么时候应该被同步？
-    //Dictionary<string, int> symbolsPlayerHad = new Dictionary<string, int>();
-    //<string, int> symbolsinHand = new Dictionary<string, int>();
-    //Dictionary<string, int> symbolsinSlot = new Dictionary<string, int>();
-    //Dictionary<string, int> symbolsinLeft = new Dictionary<string, int>();
+    private SlotMachineAnimation slotMachineAnimation;
     
     public void Swap<T>(IList<T> list, int indexA, int indexB)
     {
@@ -56,6 +52,7 @@ public class SlotMachine : MonoBehaviour
 
     private void Awake()
     {
+        slotMachineAnimation = SlotMachineAnimation.Instance;
         slotMachine = GameObject.FindGameObjectWithTag("SlotMachine");
         Image[] imagesList = slotMachine.GetComponentsInChildren<Image>();
         for(int i = 0; i < 4; i++)
